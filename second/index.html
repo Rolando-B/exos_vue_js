@@ -6,8 +6,10 @@
 <body>
 <div v-on:mousemove="update" id="app">
 	<button v-on:click="increase">Click me</button>
-	<p>{{ counter }}</p>
+	<button v-on:click="counter++">Click me</button>
+	<p>{{ counter * 2 > 10 ? 'greater than 10' : 'smaller than 10' }}</p>
 	<p>{{ x }} / {{y}}</p>
+	<span v-on:mousemove.stop="">DEAD SPOT</span>
 </div>
 <script src="vue.js" type="text/javascript"></script>
 <script src="script.js" type="text/javascript"></script>
