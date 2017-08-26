@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exo vueJS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="app">
+	<p v-if='show'>You can see me !</p>
+	<p v-else>Now you see me !</p>
+	<p>Do you also see me ?</p>
+	<button @click='show = !show'>switch</button>
+</div>
+	
+<script src="vue.js" type="text/javascript"></script>
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
